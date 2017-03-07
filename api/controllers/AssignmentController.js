@@ -22,28 +22,11 @@ module.exports = {
 
 	update: function (req, res) {
 
-		// Previous tags = [32,47,48,60,61,62,63,64,65,66,67,68,69,70,239,240,241,242,243];
-		let newTags = [ 5,
-			6,
-			7,
-			8,
-			32,
-			47,
-			48,
-			60,
-			61,
-			62,
-			63,
-			64,
-			65,
-			67,
-			68,
-			69,
-			70
-		];
+		// Previous tags = [32,47,48,60,61,62,63,64,65,66,67,68,69,70];
+		let newTags = [1,2,3,4,5,6,7,8,9,10];
 
 		Assignment.update({id: 9}, {tags: newTags})
-         .exec(function afterwards(err, updated) {
+         .exec(function (err, updated) {
             if (err) {
                 return res.serverError(err);
             }

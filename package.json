@@ -23,7 +23,7 @@
     "sails": "~0.12.11",
     "sails-disk": "~0.10.9",
     "sails-mysql": "^0.11.5",
-    "waterline": "^0.11.9"
+    "waterline": "^0.11.10"
   },
   "scripts": {
     "debug": "node debug app.js",
